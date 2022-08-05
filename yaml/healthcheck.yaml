@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "tcp-healthcheck",
+    "namespace": "namespace-1",
+    "labels": {},
+    "annotations": {},
+    "description": null,
+    "disable": null
+  },
+  "spec": {
+    "tcp_health_check": {
+      "send_payload": null,
+      "expected_response": null
+    },
+    "timeout": 3,
+    "interval": 15,
+    "unhealthy_threshold": 1,
+    "healthy_threshold": 3,
+    "jitter_percent": 30
+  },
+  "resource_version": null
+}

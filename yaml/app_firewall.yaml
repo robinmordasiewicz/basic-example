@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "app-fw",
+    "namespace": "namespace-1",
+    "labels": {},
+    "annotations": {},
+    "description": null,
+    "disable": null
+  },
+  "spec": {
+    "blocking": {},
+    "default_detection_settings": {},
+    "default_bot_setting": {},
+    "allow_all_response_codes": {},
+    "default_anonymization": {},
+    "use_default_blocking_page": {}
+  },
+  "resource_version": null
+}

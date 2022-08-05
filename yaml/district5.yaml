@@ -1,0 +1,498 @@
+
+{
+  "metadata": {
+    "name": "district5-http-loadbalancer",
+    "namespace": "namespace-1",
+    "labels": {},
+    "annotations": {},
+    "description": null,
+    "disable": null
+  },
+  "spec": {
+    "domains": [
+      "school61.example.com",
+      "school62.example.com",
+      "school63.example.com",
+      "school64.example.com",
+      "school65.example.com",
+      "school66.example.com",
+      "school67.example.com",
+      "school68.example.com",
+      "school69.example.com",
+      "school70.example.com",
+      "school71.example.com",
+      "school72.example.com",
+      "school73.example.com",
+      "school74.example.com",
+      "school75.example.com",
+    ],
+    "http": {
+      "dns_volterra_managed": null,
+      "port": 80
+    },
+    "advertise_on_public_default_vip": {},
+    "default_route_pools": null,
+    "routes": [
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school61-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school61.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school62-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school62.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school63-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school63.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school64-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school64.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school65-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school65.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school66-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school66.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school67-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school67.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school68-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school68.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school69-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school69.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school70-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school70.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school71-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school71.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school72-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school72.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school73-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school73.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school74-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school74.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+      {
+        "simple_route": {
+          "http_method": "ANY",
+          "path": {
+            "regex": "/*"
+          },
+          "origin_pools": [
+            {
+              "pool": {
+                "tenant": "example-xxxxxxxx",
+                "namespace": "namespace-1",
+                "name": "school75-originpool"
+              },
+              "weight": 1,
+              "priority": 1,
+              "endpoint_subsets": {}
+            }
+          ],
+          "headers": [
+            {
+              "name": "host",
+              "exact": "school75.example.com",
+              "invert_match": null
+            }
+          ],
+          "auto_host_rewrite": {},
+          "advanced_options": null
+        }
+      },
+    ],
+    "cors_policy": null,
+    "app_firewall": {
+      "tenant": "globalpayments-nimdeswt",
+      "namespace": "namespace1",
+      "name": "app-fw"
+    },
+    "add_location": true,
+    "no_challenge": {},
+    "more_option": null,
+    "user_id_client_ip": {},
+    "disable_rate_limit": {},
+    "malicious_user_mitigation": null,
+    "waf_exclusion_rules": null,
+    "data_guard_rules": null,
+    "blocked_clients": null,
+    "trusted_clients": null,
+    "api_protection_rules": null,
+    "ddos_mitigation_rules": null,
+    "service_policies_from_namespace": {},
+    "round_robin": {},
+    "multi_lb_app": {},
+    "disable_bot_defense": {},
+    "disable_api_definition": {},
+    "disable_ip_reputation": {}
+  },
+  "resource_version": null
+}

@@ -1,0 +1,3 @@
+server-urls: https://example.console.ves.volterra.io/api
+p12-bundle: example.console.ves.volterra.io.api-creds.p12
+

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "name": "school10-originpool",
+    "namespace": "namespace-1",
+    "labels": {},
+    "annotations": {},
+    "description": null,
+    "disable": null
+  },
+  "spec": {
+    "origin_servers": [
+      {
+        "public_ip": {
+          "ip": "203.0.113.1"
+        },
+        "labels": {}
+      }
+    ],
+    "use_tls": {
+      "use_host_header_as_sni": {},
+      "tls_config": {
+        "default_security": {}
+      },
+      "volterra_trusted_ca": {},
+      "no_mtls": {}
+    },
+    "port": 443,
+    "same_as_endpoint_port": {},
+    "healthcheck": [
+      {
+        "tenant": "example-xxxxxx",
+        "namespace": "namespace-1",
+        "name": "tcp-healthcheck"
+      }
+    ],
+    "loadbalancer_algorithm": "LB_OVERRIDE",
+    "endpoint_selection": "LOCAL_PREFERRED",
+    "advanced_options": null
+  },
+  "resource_version": null
+}
